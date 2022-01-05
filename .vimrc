@@ -17,10 +17,6 @@ set wmnu    " tab 을 눌렀을 때 자동완성 가능한 목록
 syntax on    " 문법 하이라이트 on
 filetype indent on    " 파일 종류에 따른 구문 강조
 set mouse=a    " 커서 이동을 마우스로 가능하도록
-colorscheme molokai
-set guifont=Inconsolata\ 13
-
-:set lines=40 columns=160
 
 set rtp+=~/.vim/bundle/Vundle.vim
 
@@ -36,16 +32,17 @@ Plugin 'blueyed/vim-diminactive'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'Shougo/neocomplcache'
 Plugin 'preservim/nerdcommenter'
+Plugin 'joshdick/onedark.vim'
 
 call vundle#end()
 
 filetype plugin on
 
 " for NERDTree
-nmap <F9> :NERDTree<CR>
+nmap <F8> :NERDTree<CR>
 
 " for taglist
-nmap <F8> :Tagbar<CR>
+nmap <F9> :Tagbar<CR>
 
 " for vim-airline
 let g:airline#extensions#tabline#enabled = 1 "turn on buffer list
@@ -61,5 +58,5 @@ let g:neocomplcache_enable_at_startup = 1
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 imap <C-L> <C-o>A;<CR>
-map <F11> :bp<CR>
+map <F10> :bp<CR>
 map <F12> :bn<CR>
