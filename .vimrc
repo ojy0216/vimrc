@@ -38,6 +38,9 @@ call vundle#end()
 
 filetype plugin on
 
+syntax on
+colorscheme onedark
+
 " for NERDTree
 nmap <F8> :NERDTree<CR>
 
@@ -46,6 +49,7 @@ nmap <F9> :Tagbar<CR>
 
 " for vim-airline
 let g:airline#extensions#tabline#enabled = 1 "turn on buffer list
+let g:airline_theme='deus'
 
 " for vim-diminactive
 let g:diminactive_enable_focus = 1
