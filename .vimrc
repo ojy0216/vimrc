@@ -64,3 +64,6 @@ inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 imap <C-L> <C-o>A;<CR>
 map <F10> :bp<CR>
 map <F12> :bn<CR>
+
+" When vim opens slow
+set clipboard=exclude:.*
