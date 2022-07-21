@@ -61,6 +61,15 @@ let g:AutoPairsFlyMode = 1
 let g:neocomplcache_enable_at_startup = 1
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
+" for nerdcommenter
+let g:NERDspaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDCommentEmptyLines = 1
+
+" <Ctrl-/> for toggle comment
+map <C-_> <plug>NERDCommenterToggle
+
 imap <C-L> <C-o>A;<CR>
 map <F10> :bp<CR>
 map <F12> :bn<CR>
