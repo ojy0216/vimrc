@@ -58,6 +58,7 @@ let g:diminactive_enable_focus = 1
 let g:AutoPairsFlyMode = 1
 
 " for neocomplache
+set completeopt-=preview
 let g:neocomplcache_enable_at_startup = 1
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
