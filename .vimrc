@@ -72,6 +72,7 @@ let g:NERDCommentEmptyLines = 1
 map <C-_> <plug>NERDCommenterToggle
 
 imap <C-L> <C-o>A;<CR>
+imap <C-K> <C-o>A,<CR>
 map <F10> :bp<CR>
 map <F12> :bn<CR>
 
